@@ -18,7 +18,7 @@ jobs:
        from datetime import datetime as dt
        env_file = os.getenv('GITHUB_ENV')
        x=dt.now()
-       with open(./version.txt, "r") as f:
+       with open(version.txt, "r") as f:
           line  = f.readline()
 
        with open(env_file, "a") as myfile:
