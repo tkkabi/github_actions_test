@@ -19,10 +19,11 @@ jobs:
       python -v
    - name: tttt
      run: |
-          pwd    
+          pwd
+          ls -ltr
    - name: Run Tagging code
      run: |
-       python tag.py       
+       python ./data-service/tag.py       
    - name: get environment variable
      run:  |
         echo ${{ env.my_date }}
