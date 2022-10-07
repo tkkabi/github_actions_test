@@ -18,8 +18,16 @@ jobs:
        from datetime import datetime as dt
        env_file = os.getenv('GITHUB_ENV')
        x=dt.now()
+       with open(./version.txt, "r") as f:
+          line  = f.readline()
+
        with open(env_file, "a") as myfile:
           myfile.write(f"my_date={x}")
+          myfile.write(f"my_var={line}")
+       
+       
    - name: get environment variable
-     run:  echo ${{ env.my_date }}
+     run:  |
+        echo ${{ env.my_date }}
+        echo ${{ env.my_var }}
 
