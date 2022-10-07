@@ -11,7 +11,8 @@ jobs:
       node -v
       npm -v
     
-   - name: python Commands
+   - name: python Command
+     shell: python
      run: |
-       from datetime import datetime as datetime
+       from datetime import datetime as dt
        print(dt.now())
