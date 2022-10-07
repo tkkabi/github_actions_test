@@ -17,6 +17,7 @@ jobs:
        import os
        from datetime import datetime as dt
        env_file = os.getenv('GITHUB_ENV')
+       path  = os.path.dirname(path)
        x=dt.now()
        with open(os.path.dirname(path)+'/version.txt', "r") as f:
           line  = f.readline()
