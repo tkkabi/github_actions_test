@@ -10,6 +10,9 @@ jobs:
      run: |
       node -v
       npm -v
+   - name: tttt
+      ls
+      
     
    - name: python Command
      shell: python
