@@ -43,7 +43,7 @@ jobs:
        
    - name: get environment variable
      run:  |
-        # echo ${{ env.my_date }}
+        echo ${{ env.my_date }}
         echo ${{ env.my_var }}
         MY_MESSAGE = ${{ env.my_var }}
         echo my var is $MY_MESSAGE
