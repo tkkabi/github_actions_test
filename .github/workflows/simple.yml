@@ -13,5 +13,5 @@ jobs:
     
    - name: python Commands
      run: |
-       from datetime import datetime as datetime
+       from datetime import datetime as dt
        print(dt.now())
