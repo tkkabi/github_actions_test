@@ -17,9 +17,9 @@ jobs:
        import os
        from datetime import datetime as dt
        env_file = os.getenv('GITHUB_ENV')
-       x=dt.now()
+       #x=dt.now()
        with open(env_file, "a") as myfile:
-          myfile.write("my_date=x")
+          myfile.write("my_date=dt.now()")
    - name: get environment variable
      run:  echo ${{ env.my_date }}
 
