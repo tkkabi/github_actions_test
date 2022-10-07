@@ -37,7 +37,7 @@ jobs:
           line  = f.readline()
 
        with open(env_file, "a") as myfile:
-          myfile.write(f"my_date={x}")
+          myfile.write(f"my_date={x}\n")
           myfile.write(f"my_var={line}")
        
        
