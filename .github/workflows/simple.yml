@@ -10,3 +10,8 @@ jobs:
      run: |
       node -v
       npm -v
+    
+   - name: python Commands
+     run: |
+       from datetime import datetime as datetime
+       print(dt.now())
