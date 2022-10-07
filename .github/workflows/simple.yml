@@ -14,6 +14,12 @@ jobs:
    - name: python Command
      shell: python
      run: |
+       import os
        from datetime import datetime as dt
-       print(dt.now())
+       env_file = os.getenv('GITHUB_ENV')
+       x=dt.now()
+       with open(env_file, "a") as myfile:
+          myfile.write("my_date=x")
+   - name: get environment variable
+     run:  echo ${{ env.my_date }}
 
