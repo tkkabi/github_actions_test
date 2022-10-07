@@ -45,6 +45,6 @@ jobs:
      run:  |
         # echo ${{ env.my_date }}
         echo ${{ env.my_var }}
-        $x = ${{ env.my_var }}
+        x = ${{ env.my_var }}
         echo "my var is $x"
 
