@@ -18,3 +18,6 @@ with open(env_file, "a") as myfile:
 
 with open(version_path, "a") as f:
   f.write(str(new_line))
+with open(version_path, "r") as f:
+  line  = f.readline()
+print("--------------------{line}")
