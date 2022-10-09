@@ -10,6 +10,11 @@ x=dt.now()
 with open(version_path, "r") as f:
   line  = f.readline()
 
+new_line = int(line)+1
+
 with open(env_file, "a") as myfile:
   myfile.write(f"my_date={x}\n")
-  myfile.write(f"my_var={line}")
+  myfile.write(f"my_var={new_line}")
+
+with open(version_path, "a") as f:
+  f.write(new_line)
