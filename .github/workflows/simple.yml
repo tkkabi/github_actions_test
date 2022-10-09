@@ -31,5 +31,6 @@ jobs:
         echo my var is ${{ env.my_var }}
    - name: Push version file into main
      run: |
-        git push 
+       git branch
+       git push 
 
