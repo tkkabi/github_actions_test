@@ -33,5 +33,5 @@ jobs:
      run: |
        git branch
        cat data-service/version.txt
-       git push 
+      #  git push 
 
