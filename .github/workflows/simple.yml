@@ -31,6 +31,8 @@ jobs:
         echo my var is ${{ env.my_var }}
    - name: Push version file into main
      run: |
+       git config --global user.email "a@b.com"
+       git config --global user.name "runner"
        git branch
        cat data-service/version.txt
        git status
