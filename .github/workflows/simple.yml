@@ -29,4 +29,6 @@ jobs:
         echo ${{ env.my_date }}
         echo ${{ env.my_var }}
         echo my var is ${{ env.my_var }}
+   - name: Push version file into main
+        git push 
 
