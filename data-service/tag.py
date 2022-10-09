@@ -19,5 +19,5 @@ with open(env_file, "a") as myfile:
 with open(version_path, "a") as f:
   f.write(f"\n{str(new_line)}")
 with open(version_path, "r") as f:
-  line  = f.readline()
+  line  = f.read()
 print(f"--------------------{line}")
