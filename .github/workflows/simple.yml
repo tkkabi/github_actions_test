@@ -32,5 +32,6 @@ jobs:
    - name: Push version file into main
      run: |
        git branch
+       cat data-service/version.txt
        git push 
 
