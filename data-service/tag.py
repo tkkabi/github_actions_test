@@ -17,4 +17,4 @@ with open(env_file, "a") as myfile:
   myfile.write(f"my_var={new_line}")
 
 with open(version_path, "a") as f:
-  f.write(new_line)
+  f.write(str(new_line))
